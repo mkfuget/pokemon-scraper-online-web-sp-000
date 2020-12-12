@@ -14,5 +14,5 @@ class Pokemon
     SQL
     
     @bd.execute(sql)
-  
+  end
 end
