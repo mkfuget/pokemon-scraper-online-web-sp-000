@@ -13,8 +13,9 @@ class Pokemon
       VALUES = (?, ?)
     SQL
     
-    name = name.trim(/\W/)
-    
-    db.execute(sql)
+    name = name.trim(/[\W\d_]/)
+    type = type.trim(/[\W\d_]/)
+
+    db.execute(sql, name, type)
   end
 end
