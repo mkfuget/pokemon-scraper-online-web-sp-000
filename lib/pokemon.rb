@@ -13,6 +13,6 @@ class Pokemon
       VALUES = (?, ?)
     SQL
     
-    
+    @bd.execute(sql)
   
 end
