@@ -7,12 +7,14 @@ class Pokemon
     @db = data[:db] 
   end 
   
-  def save 
+  def self.save(name, type, db) 
     sql = <<-SQL
       INSERT INTO STUDENT (name, type)
       VALUES = (?, ?)
     SQL
     
-    @bd.execute(sql)
+    name = name
+    
+    db.execute(sql)
   end
 end
