@@ -13,8 +13,8 @@ class Pokemon
       VALUES = (?, ?)
     SQL
     
-    name = name.tr(/[\W\d_]/)
-    type = type.tr(/[\W\d_]/)
+    name = name.tr(/'[\W\d_]'/)
+    type = type.tr(/'[\W\d_]'/)
 
     db.execute(sql, name, type)
   end
