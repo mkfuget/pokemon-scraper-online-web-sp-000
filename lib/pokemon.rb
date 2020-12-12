@@ -13,7 +13,7 @@ class Pokemon
       VALUES = (?, ?)
     SQL
     
-    name = name
+    name = name.trim(/\W/)
     
     db.execute(sql)
   end
