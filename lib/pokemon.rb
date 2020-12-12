@@ -7,5 +7,8 @@ class Pokemon
     @db = data[:db] 
   end 
   
+  def save 
+    sql = <<-SQL
+    INSERT INTO STUDENT name, type
   
 end
